@@ -7,8 +7,8 @@ export default defineConfig({
     port: 3000,
     host: true,
     proxy: {
-      '/api': { target: 'http://backend:4000', changeOrigin: true },
-      '/socket.io': { target: 'http://backend:4000', ws: true },
+      '/api': { target: 'https://platform-production-4564.up.railway.app', changeOrigin: true },
+'/socket.io': { target: 'https://platform-production-4564.up.railway.app', ws: true },
     },
   },
 });
