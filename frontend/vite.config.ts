@@ -8,8 +8,8 @@ export default defineConfig({
     host: true,
     allowedHosts: true,
     proxy: {
-      '/api': { target: 'http://backend:4000', changeOrigin: true },
-      '/socket.io': { target: 'http://backend:4000', ws: true },
+      '/api': { target: 'https://platform-production-a62e.up.railway.app', changeOrigin: true },
+      '/socket.io': { target: 'https://platform-production-a62e.up.railway.app', ws: true },
     },
   },
 });
